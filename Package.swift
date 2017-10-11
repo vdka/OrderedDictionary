@@ -7,6 +7,7 @@ let package = Package(
     dependencies: [],
     targets: [
         .target(name: "OrderedDictionary", dependencies: []),
+        .testTarget(name: "OrderedDictionaryTests", dependencies: ["OrderedDictionary"]),
     ],
     swiftLanguageVersions: [4]
 )
